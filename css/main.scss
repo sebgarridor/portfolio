@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
     color: whitesmoke;
-    letter-spacing: 0.4rem;
+
 }
 
 
@@ -19,9 +19,38 @@
 
     .one {
         background-color: #303030;
+        padding: 0rem 15rem;
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+
+        .intro-text {
+            width: 50%;
+
+            h1 {
+                font-size: 3em;
+                letter-spacing: 0.9rem;
+            }
+
+            span {
+                font-size: 1.5em;
+                text-decoration: underline;
+            }
+
+        }
 
 
         .intro-img {
+            width: 50rem;
+
+            img {
+                width: 100%;
+                padding: 1rem;
+                border: 1px solid white;
+            }
+
+
+
 
         }
     }

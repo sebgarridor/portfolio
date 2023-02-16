@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
   color: whitesmoke;
-  letter-spacing: 0.4rem;
 }
 
 .container {
@@ -16,6 +15,29 @@
 }
 .container .one {
   background-color: #303030;
+  padding: 0rem 15rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+.container .one .intro-text {
+  width: 50%;
+}
+.container .one .intro-text h1 {
+  font-size: 3em;
+  letter-spacing: 0.9rem;
+}
+.container .one .intro-text span {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+.container .one .intro-img {
+  width: 50rem;
+}
+.container .one .intro-img img {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid white;
 }
 .container .two {
   background-color: #2b2b2b;
