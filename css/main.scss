@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
 
+$spacemono-font: 'Space Mono', monospace;
+$inter-font: 'Inter', sans-serif;
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
+
     color: whitesmoke;
 
 }
@@ -36,16 +39,32 @@
         flex-direction: row;
         gap: 10rem;
 
+
+
         .intro-text {
             width: 50%;
+            font-family: $spacemono-font;
+            
 
             h1 {
-                font-size: 3em;
+                font-size: 4em;
+                font-family: $inter-font !important;
+                font-weight: 600;
 
             }
             
             h2 {
+                font-family: $inter-font;
            
+            }
+
+            .numb {
+                font-size: 2em;
+                letter-spacing: 0.5rem;
+            }
+
+            p {
+                font-weight: 400;
             }
 
             span {
@@ -81,6 +100,10 @@
 
     .two {
         background-color: #262626;
+        font-family: $spacemono-font;
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 15rem;
 
 
 
@@ -93,6 +116,34 @@
             width: 50%;
             padding: 0rem 0rem;
             text-align: center;
+        }
+
+        .aboutme-stuff {
+            width: 50%;
+
+            .aboutme-links {
+                display: flex;
+                flex-direction: row;
+                flex-basis: 100%;
+                gap: 5rem;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+
+                .link {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+
+                .link:hover {
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+
+
+            }
         }
     }
 
@@ -113,35 +164,7 @@ section {
     align-items: center;
     scroll-snap-align: center;
 
-    .section-one {
-        -webkit-animation: slide-in-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
-                animation: slide-in-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
-    }
 
-    @-webkit-keyframes section-one {
-        0% {
-          -webkit-transform: translateX(-1000px);
-                  transform: translateX(-1000px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateX(0);
-                  transform: translateX(0);
-          opacity: 1;
-        }
-      }
-      @keyframes section-one {
-        0% {
-          -webkit-transform: translateX(-1000px);
-                  transform: translateX(-1000px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateX(0);
-                  transform: translateX(0);
-          opacity: 1;
-        }
-      }
 
     
 

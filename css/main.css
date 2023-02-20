@@ -4,7 +4,6 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: "Space Mono", monospace;
   color: whitesmoke;
 }
 
@@ -30,9 +29,22 @@
 }
 .one .intro-text {
   width: 50%;
+  font-family: "Space Mono", monospace;
 }
 .one .intro-text h1 {
-  font-size: 3em;
+  font-size: 4em;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600;
+}
+.one .intro-text h2 {
+  font-family: "Inter", sans-serif;
+}
+.one .intro-text .numb {
+  font-size: 2em;
+  letter-spacing: 0.5rem;
+}
+.one .intro-text p {
+  font-weight: 400;
 }
 .one .intro-text span {
   font-size: 1.5em;
@@ -53,6 +65,10 @@
 
 .two {
   background-color: #262626;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 15rem;
 }
 .two span {
   color: #c1c1c1;
@@ -61,6 +77,25 @@
   width: 50%;
   padding: 0rem 0rem;
   text-align: center;
+}
+.two .aboutme-stuff {
+  width: 50%;
+}
+.two .aboutme-stuff .aboutme-links {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.two .aboutme-stuff .aboutme-links .link {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.two .aboutme-stuff .aboutme-links .link:hover {
+  transform: scale(1.1);
 }
 
 .three {
@@ -77,17 +112,4 @@ section {
   justify-content: center;
   align-items: center;
   scroll-snap-align: center;
-}
-section .section-one {
-  animation: slide-in-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-@keyframes section-one {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }/*# sourceMappingURL=main.css.map */
