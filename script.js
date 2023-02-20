@@ -1,3 +1,4 @@
+//smooth scrolling
 const body = document.body,
 scrollWrap = document.getElementsByClassName("container")[0],
 height = scrollWrap.getBoundingClientRect().height - 1,
@@ -17,3 +18,10 @@ callScroll = requestAnimationFrame(smoothScroll);
 }
 
 smoothScroll();
+
+
+//hover text effect
+
+document.addEventListener('DOMContentLoaded', function(){
+    var trigger = new ScrollTrigger();
+  });
