@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
 
 * {
     margin: 0;
@@ -17,10 +17,22 @@
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 
+
+    a {
+        text-decoration: none;
+
+        :hover {
+            color: #8BACAB;
+        }
+
+        }
+    }
+
     .one {
         background-color: #303030;
         padding: 0rem 15rem;
         display: flex;
+        flex-basis: 100%;
         flex-direction: row;
         gap: 10rem;
 
@@ -29,7 +41,11 @@
 
             h1 {
                 font-size: 3em;
-                letter-spacing: 0.9rem;
+
+            }
+            
+            h2 {
+           
             }
 
             span {
@@ -37,17 +53,25 @@
                 text-decoration: underline;
             }
 
+            .readmore {
+                display: flex;
+                justify-content: center;
+            }
+
+            
+
         }
 
 
         .intro-img {
-            width: 50rem;
+            width: 50%;
 
             img {
                 width: 100%;
                 padding: 1rem;
                 border: 1px solid white;
             }
+ 
 
 
 
@@ -56,13 +80,31 @@
     }
 
     .two {
-        background-color: #2b2b2b;
+        background-color: #262626;
+
+
+
+        span {
+            color: #c1c1c1;
+        }
+
+
+        .aboutme-text {
+            width: 50%;
+            padding: 0rem 0rem;
+            text-align: center;
+        }
     }
 
     .three {
-        background-color: #1f1f1f;
+        background-color: #222222;
     }
-}
+
+    .four {
+        background-color: #1d1d1d;
+
+    }
+
 
 section {
     height: 100vh;
@@ -70,6 +112,38 @@ section {
     justify-content: center;
     align-items: center;
     scroll-snap-align: center;
+
+    .section-one {
+        -webkit-animation: slide-in-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+                animation: slide-in-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+    }
+
+    @-webkit-keyframes section-one {
+        0% {
+          -webkit-transform: translateX(-1000px);
+                  transform: translateX(-1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes section-one {
+        0% {
+          -webkit-transform: translateX(-1000px);
+                  transform: translateX(-1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+    
 
 
 }
