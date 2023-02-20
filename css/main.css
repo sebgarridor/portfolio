@@ -16,23 +16,6 @@ html, body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
-.container .underline:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 1em;
-  width: 100%;
-  border-bottom: 1px solid;
-  margin-top: 10px;
-  opacity: 0;
-  transition: opacity 0.35s, transform 0.35s;
-  transform: scale(0, 1);
-}
-.container .underline:hover:after {
-  opacity: 1;
-  transform: scale(1);
-}
 .container a {
   text-decoration: none;
 }
@@ -100,6 +83,12 @@ html, body {
   flex-direction: column;
   padding: 0rem 15rem;
 }
+.two h1 {
+  font-size: 2em;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
 .two span {
   color: #c1c1c1;
 }
@@ -131,6 +120,12 @@ html, body {
 /*section three */
 .three {
   background-color: #222222;
+}
+.three h1 {
+  font-size: 2em;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600;
+  letter-spacing: -3px;
 }
 
 .four {
