@@ -58,7 +58,9 @@ html, body {
 }
 .one .intro-text .numb {
   font-size: 2em;
-  letter-spacing: 0.5rem;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600;
+  letter-spacing: -5px;
 }
 .one .intro-text p {
   font-weight: 400;
@@ -95,7 +97,7 @@ html, body {
 .two .aboutme-text {
   width: 60%;
   padding: 0rem 0rem;
-  text-align: center;
+  text-align: justify;
 }
 .two .aboutme-stuff {
   width: 50%;
@@ -120,6 +122,10 @@ html, body {
 /*section three */
 .three {
   background-color: #222222;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 15rem;
 }
 .three h1 {
   font-size: 2em;
@@ -127,9 +133,27 @@ html, body {
   font-weight: 600;
   letter-spacing: -3px;
 }
+.three span {
+  color: #c1c1c1;
+}
+.three .skills-text {
+  width: 60%;
+  padding: 0rem 0rem;
+  text-align: justify;
+}
 
 .four {
   background-color: #1d1d1d;
+  font-family: "Space Mono", monospace;
+}
+.four h1 {
+  font-size: 2em;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+.four span {
+  color: #c1c1c1;
 }
 
 section {

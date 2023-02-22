@@ -22,7 +22,7 @@ html, body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 
-    
+
 
     a {
         text-decoration: none;
@@ -72,7 +72,9 @@ html, body {
 
         .numb {
             font-size: 2em;
-            letter-spacing: 0.5rem;
+            font-family: $inter-font !important;
+            font-weight: 600;
+            letter-spacing: -5px;
         }
 
         p {
@@ -117,7 +119,7 @@ html, body {
     .aboutme-text {
         width: 60%;
         padding: 0rem 0rem;
-        text-align: center;
+        text-align: justify;
     }
 
     .aboutme-stuff {
@@ -151,7 +153,10 @@ html, body {
 /*section three */
 .three {
     background-color: #222222;
-
+    font-family: $spacemono-font;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 15rem;
 
     h1 {
         font-size: 2em;
@@ -159,10 +164,36 @@ html, body {
         font-weight: 600;
         letter-spacing: -3px;
     }   
+
+    
+    span {
+        color: #c1c1c1;
+    }
+
+    .skills-text {
+        width: 60%;
+        padding: 0rem 0rem;
+        text-align: justify;
+
+    }
 }
 
 .four {
     background-color: #1d1d1d;
+
+    font-family: $spacemono-font;
+
+
+    h1 {
+        font-size: 2em;
+        font-family: $inter-font !important;
+        font-weight: 600;
+        letter-spacing: -3px;
+    }       
+    
+    span {
+        color: #c1c1c1;
+    }
 }
 
 section {
