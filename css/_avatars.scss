@@ -1,0 +1,39 @@
+/*java avatar */
+.java-avatar {
+    background-image: url('../assets/icons8-java-50.png');
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.java-avatar::before,
+.java-avatar::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+}
+
+.java-avatar::before {
+    content:attr(data-tooltip);
+    color: whitesmoke;
+    font-size: 0.8rem;
+    padding: .5rem;
+    height: 25px;
+    border: 1px solid #de8775;
+    width: max-content;
+    text-align: center;
+    max-width: 100%;
+    background: transparent;
+}
+
+.java-avatar:hover::before {
+    --scale: 1;
+}
+
+/* */
+
+
