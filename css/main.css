@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap");
+/*java avatar */
+.java-avatar {
+  background-image: url("../assets/icons8-java-50.png");
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.java-avatar::before,
+.java-avatar::after {
+  --scale: 0;
+  position: absolute;
+  top: -0.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+  transition: 100ms transform;
+  transform-origin: bottom center;
+}
+
+.java-avatar::before {
+  content: attr(data-tooltip);
+  color: whitesmoke;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  height: 25px;
+  border: 1px solid #de8775;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  max-width: 100%;
+  background: transparent;
+}
+
+.java-avatar:hover::before {
+  --scale: 1;
+}
+
+/* */
 * {
   margin: 0;
   padding: 0;
@@ -140,6 +178,14 @@ html, body {
   width: 60%;
   padding: 0rem 0rem;
   text-align: justify;
+}
+.three .stack-images {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  gap: 3rem;
+  /*bunch of styling for my */
 }
 
 .four {
