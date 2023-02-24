@@ -226,6 +226,18 @@
   --scale: 1;
 }
 
+.parent {
+  display: grid;
+  grid-template-columns: auto;
+}
+.parent .child {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.parent p {
+  color: red;
+}
+
 * {
   margin: 0;
   padding: 0;

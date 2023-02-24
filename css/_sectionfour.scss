@@ -1,0 +1,13 @@
+ .parent {
+        display: grid;
+        grid-template-columns: auto;
+
+        .child {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        p {
+            color: red; 
+        }
+}
