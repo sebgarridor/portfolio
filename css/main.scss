@@ -16,6 +16,8 @@ $inter-font: "Inter", sans-serif;
 
 html, body {
     scroll-behavior: smooth !important;
+    background: rgb(48,48,48);
+    background: linear-gradient(180deg, rgba(48,48,48,1) 0%, rgba(29,29,29,1) 100%);
 }
 
 .container {
@@ -35,8 +37,23 @@ html, body {
     }
 }
 
+.underline {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 0;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.underline:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+}
+
+
+
 .one {
-    background-color: #303030;
+    
     padding: 0rem 15rem;
     display: flex;
     flex-basis: 100%;
@@ -101,7 +118,7 @@ html, body {
 }
 
 .two {
-    background-color: #262626;
+    
     font-family: $spacemono-font;
     display: flex;
     flex-direction: column;
@@ -154,7 +171,7 @@ html, body {
 
 /*section three */
 .three {
-    background-color: #222222;
+    
     font-family: $spacemono-font;
     display: flex;
     flex-direction: column;
@@ -180,11 +197,18 @@ html, body {
     }
 
     .stack-images {
+        align-items: center;
+        justify-content: center;
         margin-top: 1rem;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         flex-basis: 100%;
         gap: 3rem;
+
+        img:hover {
+            scale: 1.1  ;
+        }
 
         /*bunch of styling for my */
 
@@ -194,7 +218,7 @@ html, body {
 }
 
 .four {
-    background-color: #1d1d1d;
+    
 
     font-family: $spacemono-font;
 

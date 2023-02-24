@@ -1,13 +1,101 @@
 /*java avatar */
 .java-avatar {
-    background-image: url('../assets/icons8-java-50.png');
+    background-image: url('../assets/icons8-java-48.png');
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .java-avatar::before,
+  .java-avatar::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+  }
+  
+  .java-avatar::before {
+    content: attr(data-tooltip);
+    color: whitesmoke;
+    font-size: 0.8rem;
+    padding: .5rem;
+    height: 25px;
+    border: 1px solid #de8775;
+    width: max-content;
+    text-align: center;
+    max-width: 100%;
+    background: transparent;
+  }
+  
+  .java-avatar:hover::before {
+    --scale: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .java-avatar {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .java-avatar::before,
+    .java-avatar::after {
+      font-size: 0.7rem;
+    }
+    
+    .java-avatar::before {
+      height: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .java-avatar {
+      width: 30px;
+      height: 30px;
+    }
+    
+    .java-avatar::before,
+    .java-avatar::after {
+      font-size: 0.6rem;
+    }
+    
+    .java-avatar::before {
+      height: 15px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .java-avatar {
+      width: 25px;
+      height: 25px;
+    }
+    
+    .java-avatar::before,
+    .java-avatar::after {
+      font-size: 0.5rem;
+    }
+    
+    .java-avatar::before {
+      height: 12px;
+    }
+  }
+
+/*spring avatar */
+
+.spring-avatar {
+    background-image: url('../assets/icons8-spring-boot-48\ \(3\).png');
     width: 50px;
     height: 50px;
     position: relative;
 }
 
-.java-avatar::before,
-.java-avatar::after {
+.spring-avatar::before,
+.spring-avatar::after {
     --scale: 0;
     position: absolute;
     top: -.25rem;
@@ -17,7 +105,7 @@
     transform-origin: bottom center;
 }
 
-.java-avatar::before {
+.spring-avatar::before {
     content:attr(data-tooltip);
     color: whitesmoke;
     font-size: 0.8rem;
@@ -30,10 +118,118 @@
     background: transparent;
 }
 
-.java-avatar:hover::before {
+.spring-avatar:hover::before {
+    --scale: 1;
+}
+/*angular avatar */
+
+.angular-avatar {
+    background-image: url('../assets/icons8-angularjs-48.png');
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.angular-avatar::before,
+.angular-avatar::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+}
+
+.angular-avatar::before {
+    content:attr(data-tooltip);
+    color: whitesmoke;
+    font-size: 0.8rem;
+    padding: .5rem;
+    height: 25px;
+    border: 1px solid #de8775;
+    width: max-content;
+    text-align: center;
+    max-width: 100%;
+    background: transparent;
+}
+
+.angular-avatar:hover::before {
     --scale: 1;
 }
 
-/* */
 
+/*javascript avatar */ 
+
+.javascript-avatar {
+    background-image: url('../assets/icons8-javascript-48.png');
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.javascript-avatar::before,
+.javascript-avatar::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+}
+
+.javascript-avatar::before {
+    content:attr(data-tooltip);
+    color: whitesmoke;
+    font-size: 0.8rem;
+    padding: .5rem;
+    height: 25px;
+    border: 1px solid #de8775;
+    width: max-content;
+    text-align: center;
+    max-width: 100%;
+    background: transparent;
+}
+
+.javascript-avatar:hover::before {
+    --scale: 1;
+}
+
+/*typescript avatar */ 
+
+.typescript-avatar {
+    background-image: url('../assets/icons8-typescript-48.png');
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.typescript-avatar::before,
+.typescript-avatar::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 100ms transform;
+    transform-origin: bottom center;
+}
+
+.typescript-avatar::before {
+    content:attr(data-tooltip);
+    color: whitesmoke;
+    font-size: 0.8rem;
+    padding: .5rem;
+    height: 25px;
+    border: 1px solid #de8775;
+    width: max-content;
+    text-align: center;
+    max-width: 100%;
+    background: transparent;
+}
+
+.typescript-avatar:hover::before {
+    --scale: 1;
+}
 
