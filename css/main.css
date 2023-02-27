@@ -226,17 +226,19 @@
   --scale: 1;
 }
 
-.parent {
+.four .container-grid {
+  width: 60%;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3em 5em;
+  grid-template-areas: ". ." ". .";
 }
-.parent .child {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 5rem;
+.four .container-grid img {
+  width: 20rem;
 }
-.parent p {
-  color: red;
+.four .container-grid .project-info h4 {
+  text-align: left;
 }
 
 * {
@@ -378,7 +380,9 @@ html, body {
   font-family: "Space Mono", monospace;
   display: flex;
   flex-direction: column;
-  padding: 0rem 15rem;
+  padding: 0rem 0rem;
+  width: 50%;
+  margin: 0 25%;
 }
 .two h1 {
   font-size: 2em;
@@ -419,7 +423,9 @@ html, body {
   font-family: "Space Mono", monospace;
   display: flex;
   flex-direction: column;
-  padding: 0rem 15rem;
+  padding: 0rem 0rem;
+  width: 50%;
+  margin: 0 25%;
 }
 .three h1 {
   font-size: 2em;
@@ -455,6 +461,7 @@ html, body {
 }
 
 .four {
+  flex-direction: column;
   font-family: "Space Mono", monospace;
 }
 .four h1 {

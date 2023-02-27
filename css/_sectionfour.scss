@@ -1,14 +1,28 @@
- .parent {
-        display: grid;
-        grid-template-columns: auto;
+.four {
 
-        .child {
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 5rem;
-        }
+ .container-grid {
+    width: 60%;
+    display: grid; 
+    grid-template-columns: 40% 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 3em 5  em; 
+    grid-template-areas: 
+      ". ."
+      ". .";
 
-        p {
-            color: red; 
+
+      img {
+        width: 20rem;
+      }
+
+
+      .project-info {
+
+        h4 {
+            text-align: left;
         }
+      }
+ }
+
+
 }
