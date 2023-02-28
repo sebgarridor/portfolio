@@ -1,3 +1,4 @@
+$spacemono-font: "Space Mono", monospace;
 .four {
 
  .container-grid {
@@ -5,7 +6,7 @@
     display: grid; 
     grid-template-columns: 40% 1fr; 
     grid-template-rows: 1fr 1fr; 
-    gap: 3em 5  em; 
+    gap: 3em 10%; 
     grid-template-areas: 
       ". ."
       ". .";
@@ -20,6 +21,59 @@
 
         h4 {
             text-align: left;
+        }
+
+
+        .stack {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 1rem;
+          margin-top: 1rem;
+
+
+
+          .each-stack {
+            appearance: none;
+            background-color: transparent;
+            border: 1px solid whitesmoke;
+            border-radius: 0.9375em;
+            box-sizing: border-box;
+            color: whitesmoke;
+            cursor: pointer;
+            display: inline-block;
+            font-family: $spacemono-font;
+            font-size: 0.9rem;
+            font-weight: 200;
+            line-height: normal;
+            margin: 0;
+            min-width: 0;
+            outline: none;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            will-change: transform;
+           }
+           
+           .each-stack:disabled {
+            pointer-events: none;
+           }
+           
+           .each-stack:hover {
+            color: black;
+            background-color: whitesmoke;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+           }
+           
+           .each-stack:active {
+            box-shadow: none;
+            transform: translateY(0);
+           }
         }
       }
  }
