@@ -6,14 +6,14 @@ $spacemono-font: "Space Mono", monospace;
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr 1fr; 
-    gap: 3em 10%; 
+    gap: 3em 7%; 
     grid-template-areas: 
       ". ."
       ". .";
 
 
       img {
-        max-width: 20rem;
+        max-width: 70%;
         border-radius: 10px;
         border: 1px solid whitesmoke;
         padding: 1rem;
