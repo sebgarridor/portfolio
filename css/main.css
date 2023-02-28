@@ -229,13 +229,20 @@
 .four .container-grid {
   width: 60%;
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr 1fr;
   gap: 3em 10%;
   grid-template-areas: ". ." ". .";
 }
 .four .container-grid img {
-  width: 20rem;
+  max-width: 20rem;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  padding: 1rem;
+}
+.four .container-grid .project-info a, .four .container-grid .project-info .orange {
+  color: #de8775;
+  font-size: 1.2rem;
 }
 .four .container-grid .project-info h4 {
   text-align: left;
@@ -246,6 +253,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .four .container-grid .project-info .stack .each-stack {
   -webkit-appearance: none;

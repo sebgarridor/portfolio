@@ -4,7 +4,7 @@ $spacemono-font: "Space Mono", monospace;
  .container-grid {
     width: 60%;
     display: grid; 
-    grid-template-columns: 40% 1fr; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr 1fr; 
     gap: 3em 10%; 
     grid-template-areas: 
@@ -13,11 +13,22 @@ $spacemono-font: "Space Mono", monospace;
 
 
       img {
-        width: 20rem;
+        max-width: 20rem;
+        border-radius: 10px;
+        border: 1px solid whitesmoke;
+        padding: 1rem;
       }
 
 
       .project-info {
+
+        a, .orange {
+          color: #de8775;
+          font-size: 1.2rem;
+
+
+        }
+
 
         h4 {
             text-align: left;
@@ -30,6 +41,8 @@ $spacemono-font: "Space Mono", monospace;
           flex-wrap: wrap;
           gap: 1rem;
           margin-top: 1rem;
+          margin-bottom: 1rem;
+
 
 
 
