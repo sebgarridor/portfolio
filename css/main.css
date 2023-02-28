@@ -231,7 +231,7 @@
   display: grid;
   grid-template-columns: 40% 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 3em 5em;
+  gap: 3em 5 em;
   grid-template-areas: ". ." ". .";
 }
 .four .container-grid img {
