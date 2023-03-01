@@ -311,6 +311,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  background: black;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
 }
 .primary-header .primary-navigation a {
   text-decoration: none;
@@ -321,6 +324,15 @@
           margin-inline-end: 0.5rem;
 }
 
+@media (max-width: 35em) {
+  .primary-navigation {
+    gap: 3em;
+    position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;

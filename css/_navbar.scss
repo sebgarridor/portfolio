@@ -13,6 +13,9 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        background: black;
+        backdrop-filter: blur(1rem);
+        
 
         a {
             text-decoration: none;
@@ -23,5 +26,16 @@
             margin-inline-end: .5rem;
 
         }
+    }
+}
+
+@media (max-width: 35em) {
+    .primary-navigation {
+        gap: 3em;
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2rem;
+
     }
 }
