@@ -25,10 +25,22 @@ html, body {
     margin :0px;
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow: hidden;
     min-height: 100%;
     width: 100%;
     
 }
+
+@media (max-width: 35em) {
+
+    html,body {
+        min-height: auto;
+        width: auto;
+
+    }
+
+    }
+
 
 .container {
 
@@ -174,11 +186,10 @@ html, body {
     }
 
     .intro-img {
-        max-width: 30%;
-        min-width: 30%;
+            width: 30%;
 
         img {
-            width: 50%;
+            width: 90%;
             padding: 1rem;
             border: 1px solid white;
         }
@@ -212,11 +223,7 @@ html, body {
 
 .four {
 
-    display: flex;
-    flex-direction: column;
-    font-family: $spacemono-font;
-    width: 100%;
-    margin: auto;
+
 
 
 
