@@ -152,10 +152,11 @@ html, body {
     }
 
     .intro-img {
-        width: 50%;
+        max-width: 30%;
+        min-width: 30%;
 
         img {
-            width: 100%;
+            width: 50%;
             padding: 1rem;
             border: 1px solid white;
         }
@@ -168,8 +169,8 @@ html, body {
     display: flex;
     flex-direction: column;
     padding: 0rem 0rem;
-    width: 50%;
-    margin: 0 25%;
+    width: 60%;
+    margin: auto;
 
     h1 {
         font-size: 2em;
@@ -223,8 +224,8 @@ html, body {
     display: flex;
     flex-direction: column;
     padding: 0rem 0rem;
-    width: 50%;
-    margin: 0 25%;
+    width: 60%;
+    margin: auto;
 
     h1 {
         font-size: 2em;
@@ -273,8 +274,11 @@ html, body {
 
 .four {
 
+    display: flex;
     flex-direction: column;
     font-family: $spacemono-font;
+    width: 40%;
+    margin: auto;
 
 
 
