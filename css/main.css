@@ -569,6 +569,12 @@ html, body {
   width: 100%;
 }
 
+/* in case of being disabled */
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
 @media (max-width: 35em) {
   html, body {
     min-height: auto;
@@ -579,6 +585,17 @@ html, body {
   height: 100dvh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+}
+.container .hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.container .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 .container a {
   text-decoration: none;

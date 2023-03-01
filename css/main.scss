@@ -31,6 +31,16 @@ html, body {
     
 }
 
+
+
+
+/* in case of being disabled */
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 @media (max-width: 35em) {
 
     html,body {
@@ -42,11 +52,27 @@ html, body {
     }
 
 
+
 .container {
 
     height: 100dvh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+
+
+    
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
 
 
 
