@@ -1,0 +1,27 @@
+.flex {
+  display: flex;
+  gap: 3rem;
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+
+    .primary-navigation {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+            text-decoration: none;
+        }
+
+        a > [aria-hidden="true"] {
+            font-weight: 700;
+            margin-inline-end: .5rem;
+
+        }
+    }
+}

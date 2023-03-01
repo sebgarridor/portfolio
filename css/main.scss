@@ -1,5 +1,6 @@
 @use 'avatars';
 @use 'sectionfour';
+@use 'navbar';
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap");
 
 
@@ -19,6 +20,10 @@ html, body {
     scroll-behavior: smooth !important;
     background: rgb(48,48,48);
     background: linear-gradient(180deg, rgba(48,48,48,1) 0%, rgba(29,29,29,1) 100%);
+    margin :0px;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    
 }
 
 .container {
@@ -277,7 +282,7 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family: $spacemono-font;
-    width: 40%;
+    width: 100%;
     margin: auto;
 
 
@@ -296,7 +301,7 @@ html, body {
 }
 
 section {
-    height: 100vh;
+    height:calc(100vh - 60px);
     display: flex;
     justify-content: center;
     align-items: center;
