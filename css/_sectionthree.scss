@@ -1,0 +1,81 @@
+$spacemono-font: "Space Mono", monospace;
+$inter-font: "Inter", sans-serif;
+
+
+/*section three */
+.three {
+    
+    font-family: $spacemono-font;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem;
+    width: 60%;
+    margin: auto;
+
+    h1 {
+        font-size: 2em;
+        font-family: $inter-font !important;
+        font-weight: 600;
+        letter-spacing: -3px;
+    }   
+
+    
+    span {
+        color: #c1c1c1;
+    }
+
+    .skills-text {
+        width: 60%;
+        padding: 0rem 0rem;
+        text-align: justify;
+
+    }
+
+    .stack-images {
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        gap: 3rem;
+
+        img {
+            filter: grayscale(1);
+        }
+
+        img:hover {
+            scale: 1.1  ;
+            filter: grayscale(0);
+        }
+
+
+
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .three {
+    
+        font-family: $spacemono-font;
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 0rem;
+        width: 100%;
+        margin: auto;
+    
+
+
+        .skills-text {
+            width: 80%;
+            padding: 0rem 0rem;
+            text-align: justify;
+    
+        }
+
+
+
+    }
+}

@@ -1,0 +1,78 @@
+$spacemono-font: "Space Mono", monospace;
+$inter-font: "Inter", sans-serif;
+.two {
+    
+    font-family: $spacemono-font;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem;
+    width: 60%;
+    margin: auto;
+
+    h1 {
+        font-size: 2em;
+        font-family: $inter-font !important;
+        font-weight: 600;
+        letter-spacing: -3px;
+    }
+
+    span {
+        color: #c1c1c1;
+    }
+
+    .aboutme-text {
+        width: 60%;
+        padding: 0rem 0rem;
+        text-align: justify;
+    }
+
+    .aboutme-stuff {
+        width: 50%;
+
+        .aboutme-links {
+            display: flex;
+            flex-direction: row;
+            flex-basis: 100%;
+            gap: 5rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+
+            .link {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                -webkit-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
+            }
+
+            .link:hover {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .two {
+    
+        font-family: $spacemono-font;
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 0rem;
+        width: 100%;
+        margin: auto;
+
+
+        .aboutme-text {
+            width: 80%;
+            padding: 0rem 0rem;
+            text-align: justify;
+        }
+
+
+
+    }
+}
+
+

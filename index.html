@@ -13,40 +13,12 @@
 
 
     <!-- navbar -->
-    <header class="primary-header flex">
-      <div>
-        <img src="/assets/stgoruteo4-removebg-preview.png" width="200px" alt="">
-      </div>
 
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only"></span>
-      </button>
-
-      <nav>
-      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-        <li class="active">
-          <a href="index.html">
-          <span aria-hidden="true">01</span>home
-        </a>
-        </li>
-        <li>
-          <a href="index.html">
-          <span aria-hidden="true">02</span>aboutme
-        </a>
-        </li>
-        <li>
-          <a href="index.html">
-          <span aria-hidden="true">03</span>aboutme
-        </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
 
     <!-- section one -->
     <div class="container">
-      <section class="one">
+      <section class="one" id="home">
         <div class="intro-text">
           <h1 class="numb" style="text-align: right; color: #c1c1c1">01</h1>
           <h1 style="text-align: right">hi!</h1>
@@ -219,41 +191,42 @@
           </h1>
           <br>
         </div>
-        <div class="container-grid">
-            <div class="project-img"><img src="/assets/iconsnormal/Logo_White_Png.png" alt=""></div>
-            <div class="project-info">
-                <h3 style="margin-bottom:1rem;">black domino atelier</h3>
-                <p>e-commerce for screen printing store. first developed in spring boot, later moved to wordpress due to client requirements.</p>
-                <p>website currently up and running at  <strong><a href="https://blackdominoatelier.com">blackdominoatelier.com</strong></a></p>
-                <h4 style="margin-top: 1rem;">stack used:</h4>
-                <div class="stack">
-                  <p class="each-stack">spring boot</p>
-                  <p class="each-stack">java</p>
-                  <p class="each-stack">javascript</p>
-                  <p class="each-stack">html</p>
-                  <p class="each-stack">css</p>
-                  <p class="each-stack">wordpress</p>
-                </div>
-            </div>
-
-            
-            <div class="project-img"><img src="/assets/stgoruteo4-removebg-preview.png" alt=""></div>
-            <div class="project-info">
-              <h3 style="margin-bottom:1rem;">stgoruteo</h3>
-                <p>frontend project to display common and new places for road cyclists in santiago,chile</p>
-                <p>project intended to be fullstack as time progresses</p>
-                <p style="font-size: 0.7rem;">*strava api might not work due to expiration token</p>
-                <h4 style="margin-top: 1rem;">stack used:</h4>
-                <div class="stack">
-                  <p class="each-stack">typescript</p>
-                  <p class="each-stack">angular</p>
-                  <p class="each-stack">html</p>
-                  <p class="each-stack">css</p>
-                </div>
-                <p>access the live website <strong><span class="orange"> here</span></strong>, or access the source code  <strong><span class="orange">here</strong></span> </p>
-            </div>
-
+        <div class = "card">
+          <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80" alt="">
+          <div class="card-content">
+            <h2>
+              black domino atelier
+            </h2>
+            <p>
+              ic.
+            </p>
+            <a href="#" class="button">
+              Find out more 
+              <span class="material-symbols-outlined">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
         </div>
+        <div class = "card">
+          <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80" alt="">
+          <div class="card-content">
+            <h2>
+              stgoruteo
+            </h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+            </p>
+            <a href="#" class="button">
+              Find out more 
+              <span class="material-symbols-outlined">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+        </div>
+
+
 
       </section>
     </div>
