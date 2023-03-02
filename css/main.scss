@@ -63,7 +63,8 @@ html, body {
         opacity: 0;
         filter: blur(5px);
         transform: translateX(-100%);
-        transition: all 1s;
+        transition: all 0.5s;
+
     }
 
 
@@ -95,15 +96,15 @@ html, body {
 
 
 .underline {
-    box-shadow: inset 0 0 0 0 #54b3d6;
-    color: #54b3d6;
+    box-shadow: inset 0 0 0 0 #de8775;
+    color: #de8775;
     margin: 0 0;
-    padding: 0 .25rem;
+    padding: 0 .15rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .underline:hover {
-    box-shadow: inset 100px 0 0 0 #54b3d6;
+    box-shadow: inset 160px 0 0 0 #de8775;
     color: white;
 }
 
@@ -158,7 +159,7 @@ html, body {
         }
 
         p {
-            font-weight: 400;
+            font-weight: 600;
         }
 
         .readmore {

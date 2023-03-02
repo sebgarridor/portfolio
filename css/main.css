@@ -262,7 +262,7 @@
 }
 .four .card h2 {
   position: absolute;
-  inset: auto auto 30px 30px;
+  inset: auto auto 20px 30px;
   margin: 0;
   transition: inset 0.3s 0.3s ease-out;
   font-family: "Space Mono", monospace;
@@ -285,7 +285,7 @@
   text-decoration: none;
 }
 .four .card:hover h2 {
-  inset: auto auto 220px 30px;
+  inset: auto auto 280px 30px;
   transition: inset 0.3s ease-out;
 }
 .four .card:hover p, .four .card:hover a {
@@ -351,7 +351,8 @@
     gap: 1rem;
   }
   .four .card {
-    width: 19rem;
+    width: 16rem;
+    height: 22rem;
     border-radius: 0px;
     padding: 0rem;
     border: 1px solid #f5f5f5;
@@ -590,7 +591,7 @@ html, body {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .container .show {
   opacity: 1;
@@ -605,15 +606,15 @@ html, body {
 }
 
 .underline {
-  box-shadow: inset 0 0 0 0 #54b3d6;
-  color: #54b3d6;
+  box-shadow: inset 0 0 0 0 #de8775;
+  color: #de8775;
   margin: 0 0;
-  padding: 0 0.25rem;
+  padding: 0 0.15rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .underline:hover {
-  box-shadow: inset 100px 0 0 0 #54b3d6;
+  box-shadow: inset 160px 0 0 0 #de8775;
   color: white;
 }
 
@@ -656,7 +657,7 @@ html, body {
   letter-spacing: -5px;
 }
 .one .intro-text p {
-  font-weight: 400;
+  font-weight: 600;
 }
 .one .intro-text .readmore {
   display: flex;

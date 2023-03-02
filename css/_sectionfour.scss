@@ -38,7 +38,7 @@ $color-primary-white: rgb(240, 240, 240);
 
     h2 {
       position: absolute;
-      inset: auto auto 30px 30px;
+      inset: auto auto 20px 30px;
       margin: 0;
       transition: inset 0.3s 0.3s ease-out;
       font-family: $spacemono-font;
@@ -65,7 +65,7 @@ $color-primary-white: rgb(240, 240, 240);
     }
 
     &:hover h2 {
-      inset: auto auto 220px 30px;
+      inset: auto auto 280px 30px;
       transition: inset 0.3s ease-out;
     }
 
@@ -139,7 +139,8 @@ $color-primary-white: rgb(240, 240, 240);
     gap: 1rem;
 
     .card {
-      width: 19rem;
+      width: 16rem;
+      height: 22rem;
 
       border-radius: 0px;
       padding: 0rem;
