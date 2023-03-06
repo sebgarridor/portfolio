@@ -1,10 +1,12 @@
 $spacemono-font: "Space Mono", monospace;
 $color-primary-white: rgb(240, 240, 240);
+$poppins-font: 'Poppins', sans-serif;
 
 .four {
   display: flex;
   flex-direction: row;
-  font-family: $spacemono-font;
+  font-family: $poppins-font;
+  font-weight: 300;
   width: 100%;
   margin: auto;
   gap: 3rem;
@@ -41,7 +43,7 @@ $color-primary-white: rgb(240, 240, 240);
       inset: auto auto 20px 30px;
       margin: 0;
       transition: inset 0.3s 0.3s ease-out;
-      font-family: $spacemono-font;
+      font-family: $poppins-font;
       font-weight: 700;
     }
 
@@ -94,7 +96,8 @@ $color-primary-white: rgb(240, 240, 240);
     color: whitesmoke;
     cursor: pointer;
     display: inline-block;
-    font-family: $spacemono-font;
+    font-family: $poppins-font;
+    font-weight: 300;
     font-size: 0.9rem;
     font-weight: 200;
     line-height: normal;
@@ -133,7 +136,6 @@ $color-primary-white: rgb(240, 240, 240);
   
     display: flex;
     flex-direction: column;
-    font-family: $spacemono-font;
     width: 100%;
     margin: auto;
     gap: 1rem;
