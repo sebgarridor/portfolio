@@ -257,19 +257,17 @@ section {
 
 @media (max-width: 1024px) {
 
-    html, body {
 
-
-    }
-    
     .container {
         height: 100%;
+        overflow-y: hidden;
 
     }
     
 
     section {
         min-height: 100%;
+        overflow: hidden;
         
     }
 

@@ -286,7 +286,7 @@
   text-decoration: none;
 }
 .four .card:hover h2 {
-  inset: auto auto 280px 30px;
+  inset: auto auto 180px 30px;
   transition: inset 0.3s ease-out;
 }
 .four .card:hover p, .four .card:hover a {
@@ -718,8 +718,10 @@ section {
 @media (max-width: 1024px) {
   .container {
     height: 100%;
+    overflow-y: hidden;
   }
   section {
     min-height: 100%;
+    overflow: hidden;
   }
 }/*# sourceMappingURL=main.css.map */
