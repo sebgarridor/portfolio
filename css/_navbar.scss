@@ -35,39 +35,4 @@
     }
 }
 
-@media (max-width: 35em) {
-    .primary-navigation {
-        gap: 3em;
-        position: fixed;
-        inset: 0 0 0 30%;
-        flex-direction: column;
-        padding: min(30vh, 10rem) 2rem !important;
 
-        transform: translateX(100%);
-        transition: transform 350ms ease-in;
-
-    }
-
-    .primary-navigation[data-visible="true"] {
-        transform: translateX(0%);
-    }
-
-    .mobile-nav-toggle {
-        display: block;
-        position: absolute;
-        z-index: 9999;
-        background: url("/assets/iconsnormal/burger-menu-svgrepo-com\ \(2\).svg");
-        background-color: transparent;
-        background-repeat: no-repeat;
-        border: 0;
-        width: 4rem;
-        aspect-ratio: 1;
-        top: 0rem;
-        right: 2rem;
-    }
-
-    .mobile-nav-toggle[aria-expanded="true"]{
-        background-image: url("/assets/close-svgrepo-com.svg")
-
-    }
-}

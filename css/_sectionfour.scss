@@ -139,10 +139,11 @@ $poppins-font: 'Poppins', sans-serif;
     width: 100%;
     margin: auto;
     gap: 1rem;
+    margin-top: 10rem !important;
 
     .card {
-      width: 16rem;
-      height: 22rem;
+      width: 25rem;
+      height: 20rem;
 
       border-radius: 0px;
       padding: 0rem;

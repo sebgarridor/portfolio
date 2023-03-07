@@ -24,9 +24,7 @@ html, body {
     background: rgb(48,48,48);
     background: linear-gradient(180deg, rgba(48,48,48,1) 0%, rgba(29,29,29,1) 100%);
     margin :0px;
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow: hidden;
+
     min-height: 100%;
     width: 100%;
     
@@ -41,16 +39,6 @@ html, body {
         transition: none;
     }
 }
-
-@media (max-width: 35em) {
-
-    html,body {
-        min-height: auto;
-        width: auto;
-
-    }
-
-    }
 
 
 
@@ -87,13 +75,6 @@ html, body {
     }
 }
 
-@media (max-width: 35em) {
-    .container {
-
-
-
-    }    
-}
 
 
 .underline {
@@ -233,6 +214,7 @@ html, body {
         flex-basis: 100%;
         flex-direction: column;
         gap: 2rem;
+        
 
 
         .intro-text {
@@ -252,11 +234,6 @@ html, body {
 
 .four {
 
-
-
-
-
-
     h1 {
         font-size: 2em;
         font-family: $inter-font !important;
@@ -275,4 +252,25 @@ section {
     justify-content: center;
     align-items: center;
     scroll-snap-align: center;
+}
+
+
+@media (max-width: 1024px) {
+
+    html, body {
+
+
+    }
+    
+    .container {
+        height: 100%;
+
+    }
+    
+
+    section {
+        min-height: 100%;
+        
+    }
+
 }

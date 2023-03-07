@@ -350,10 +350,11 @@
     width: 100%;
     margin: auto;
     gap: 1rem;
+    margin-top: 10rem !important;
   }
   .four .card {
-    width: 16rem;
-    height: 22rem;
+    width: 25rem;
+    height: 20rem;
     border-radius: 0px;
     padding: 0rem;
     border: 1px solid #f5f5f5;
@@ -424,6 +425,8 @@
     padding: 0rem 0rem;
     width: 100%;
     margin: auto;
+    margin-top: 10rem !important;
+    font-family: "Poppins", sans-serif;
   }
   .three .skills-text {
     width: 80%;
@@ -482,6 +485,7 @@
     padding: 0rem 0rem;
     width: 100%;
     margin: auto;
+    margin-top: 10rem !important;
   }
   .two .aboutme-text {
     width: 80%;
@@ -522,36 +526,6 @@
           margin-inline-end: 0.5rem;
 }
 
-@media (max-width: 35em) {
-  .primary-navigation {
-    gap: 3em;
-    position: fixed;
-    inset: 0 0 0 30%;
-    flex-direction: column;
-    padding: min(30vh, 10rem) 2rem !important;
-    transform: translateX(100%);
-    transition: transform 350ms ease-in;
-  }
-  .primary-navigation[data-visible=true] {
-    transform: translateX(0%);
-  }
-  .mobile-nav-toggle {
-    display: block;
-    position: absolute;
-    z-index: 9999;
-    background: url("/assets/iconsnormal/burger-menu-svgrepo-com (2).svg");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: 0;
-    width: 4rem;
-    aspect-ratio: 1;
-    top: 0rem;
-    right: 2rem;
-  }
-  .mobile-nav-toggle[aria-expanded=true] {
-    background-image: url("/assets/close-svgrepo-com.svg");
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -565,9 +539,6 @@ html, body {
   background: rgb(48, 48, 48);
   background: linear-gradient(180deg, rgb(48, 48, 48) 0%, rgb(29, 29, 29) 100%);
   margin: 0px;
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  overflow: hidden;
   min-height: 100%;
   width: 100%;
 }
@@ -576,12 +547,6 @@ html, body {
 @media (prefers-reduced-motion) {
   .hidden {
     transition: none;
-  }
-}
-@media (max-width: 35em) {
-  html, body {
-    min-height: auto;
-    width: auto;
   }
 }
 .container {
@@ -748,4 +713,13 @@ section {
   justify-content: center;
   align-items: center;
   scroll-snap-align: center;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    height: 100%;
+  }
+  section {
+    min-height: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
