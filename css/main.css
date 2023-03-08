@@ -349,12 +349,13 @@
     flex-direction: column;
     width: 100%;
     margin: auto;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 10rem !important;
+    margin-bottom: 5rem !important;
   }
   .four .card {
     width: 25rem;
-    height: 20rem;
+    height: 15rem;
     border-radius: 0px;
     padding: 0rem;
     border: 1px solid #f5f5f5;
