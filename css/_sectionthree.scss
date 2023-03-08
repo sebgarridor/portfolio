@@ -43,12 +43,17 @@ $poppins-font: 'Poppins', sans-serif;
         flex-basis: 100%;
         gap: 3rem;
 
-        img {
+        img{
             filter: grayscale(1);
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
         }
 
         img:hover {
-            scale: 1.1  ;
+            -webkit-transform: scale(1);
+            transform: scale(1);
             filter: grayscale(0);
         }
 

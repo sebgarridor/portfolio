@@ -412,9 +412,11 @@
 }
 .three .stack-images img {
   filter: grayscale(1);
+  transform: scale(0.8);
+  transition: 0.3s ease-in-out;
 }
 .three .stack-images img:hover {
-  scale: 1.1;
+  transform: scale(1);
   filter: grayscale(0);
 }
 
@@ -479,7 +481,7 @@
 
 @media (max-width: 1024px) {
   .two {
-    font-family: "Space Mono", monospace;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     padding: 0rem 0rem;
